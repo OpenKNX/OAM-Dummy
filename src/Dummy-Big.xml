@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../../Organization/knxprod-support/knx_project_20/knx-editor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<KNX xmlns="http://knx.org/xml/project/20" xmlns:op="http://github.com/OpenKNX/OpenKNXproducer">
+
+  <op:config href="Dummy.conf.xml" />
+
+  <op:ETS OpenKnxId="0xA0" 
+          ApplicationNumber="0x06" 
+          ApplicationVersion="%DUMMY_ApplicationVersion%" 
+          ReplacesVersions="%DUMMY_ReplacesVersions%" 
+          ApplicationRevision="0" 
+          ProductName="Dummy"
+          MediumTypes="MT-0 MT-5"
+          BusCurrent="0"
+          IsRailMounted="false"
+          BaggagesRootDir="A0/05"
+          />
+
+  <op:define prefix="DUMMY" NumChannels="999" KoOffset="1" ModuleType="1" 
+    share="Dummy.share.xml" 
+    template="Dummy.templ.xml">
+  </op:define>
+  <generate base="TemplateApplication.xml" />
+</KNX>

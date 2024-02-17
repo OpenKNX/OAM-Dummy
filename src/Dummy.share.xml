@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../../Organization/knxprod-support/knx_project_14/knx-editor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<KNX xmlns:op="http://github.com/OpenKNX/OpenKNXproducer" xmlns="http://knx.org/xml/project/14" CreatedBy="KNX MT" ToolVersion="5.1.255.16695">
+  <ManufacturerData>
+    <Manufacturer RefId="M-00FA">
+      <ApplicationPrograms>
+        <ApplicationProgram Id="%AID%" ApplicationNumber="200" ApplicationVersion="1" ProgramType="ApplicationProgram" MaskVersion="MV-07B0" Name="SOM" LoadProcedureStyle="MergedProcedure" PeiType="0" DefaultLanguage="de" DynamicTableManagement="false" Linkable="false" MinEtsVersion="4.0">
+          <Static>
+            <ParameterTypes>
+              <ParameterType Id="%AID%_PT-ETS" Name="ETS">
+                <TypePicture RefId="%FILE-ets%" HorizontalAlignment="Right"/>
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-Text40Byte" Name="Text40Byte">
+                <TypeText SizeInBit="320" />
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-ComObjectType" Name="ComObjectType" InternalDescription="Datentyp (Datenlänge)">
+                <TypeRestriction Base="Value" SizeInBit="8">
+                  <Enumeration Text="1 Bit" Value="0" Id="%ENID%" />
+                  <Enumeration Text="2 Bit" Value="1" Id="%ENID%" />
+                  <Enumeration Text="3 Bit" Value="2" Id="%ENID%" />
+                  <Enumeration Text="4 Bit" Value="3" Id="%ENID%" />
+                  <Enumeration Text="5 Bit" Value="4" Id="%ENID%" />
+                  <Enumeration Text="6 bit" Value="5" Id="%ENID%" />
+                  <Enumeration Text="7 Bit" Value="6" Id="%ENID%" />
+                  <Enumeration Text="1 Byte" Value="7" Id="%ENID%" />
+                  <Enumeration Text="2 Byte" Value="8" Id="%ENID%" />
+                  <Enumeration Text="3 Byte" Value="9" Id="%ENID%" />
+                  <Enumeration Text="4 Byte" Value="10" Id="%ENID%" />
+                  <Enumeration Text="6 Byte" Value="11" Id="%ENID%" />
+                  <Enumeration Text="8 Byte" Value="12" Id="%ENID%" />
+                  <Enumeration Text="10 Byte" Value="13" Id="%ENID%" />
+                  <Enumeration Text="14 Byte" Value="14" Id="%ENID%" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-InputType" Name="InputType" >
+                <TypeRestriction Base="Value" SizeInBit="2">
+                  <Enumeration Text="Unbestimmt" Value="0" Id="%ENID%" />
+                  <Enumeration Text="Eingang" Value="1" Id="%ENID%" />
+                  <Enumeration Text="Ausgang" Value="2" Id="%ENID%" />
+                  <Enumeration Text="Ein-/Ausgang" Value="3" Id="%ENID%" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-EditMode" Name="EditMode" >
+                <TypeRestriction Base="Value" SizeInBit="2">
+                  <Enumeration Text="Übersicht und Detail" Value="0" Id="%ENID%" />
+                  <Enumeration Text="Nur Übersicht" Value="1" Id="%ENID%" />
+                  <Enumeration Text="Nur Detail" Value="2" Id="%ENID%" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-OnOffYesNo" Name="OnOffYesNo">
+                <TypeRestriction Base="Value" SizeInBit="1">
+                  <Enumeration Text="Nein" Value="0" Id="%ENID%" />
+                  <Enumeration Text="Ja" Value="1" Id="%ENID%" />
+                </TypeRestriction>
+              </ParameterType>
+              <ParameterType Id="%AID%_PT-NumChannels" Name="NumChannels">
+                <TypeNumber SizeInBit="16" Type="unsignedInt" minInclusive="1" maxInclusive="%N%" />
+              </ParameterType>
+            </ParameterTypes>
+            <Parameters>
+              <Parameter Id="%AID%_P-%T%000000" Name="NumChannels" ParameterType="%AID%_PT-NumChannels" Text="Anzahl der Kommunikationsobjekte" Value="20" SuffixText="von %N%" />
+              <Parameter Id="%AID%_P-%T%000001" Name="EditMode" ParameterType="%AID%_PT-EditMode" Text="Editiermodus" Value="0" />
+              <Parameter Id="%AID%_P-%T%000003" Name="ETS" ParameterType="%AID%_PT-ETS" Text="ETS" Access="Read" Value="" />
+            </Parameters>
+            <ParameterRefs>
+              <ParameterRef Id="%AID%_P-%T%000000_R-%T%00000001" RefId="%AID%_P-%T%000000" />
+              <ParameterRef Id="%AID%_P-%T%000001_R-%T%00000101" RefId="%AID%_P-%T%000001" />
+              <ParameterRef Id="%AID%_P-%T%000003_R-%T%00000301" RefId="%AID%_P-%T%000003" />
+            </ParameterRefs>
+            <ComObjectTable>
+            </ComObjectTable>
+            <ComObjectRefs>
+            </ComObjectRefs>
+          </Static>
+          <Dynamic>
+            <ChannelIndependentBlock>
+              <ParameterBlock Id="%AID%_PB-nnn" Text="Dummy Application" Icon="cog-outline" HelpContext="DUMMY-OpenKNX" >
+                <ParameterSeparator Id="%AID%_PS-nnn" Text="Kanalauswahl" UIHint="Headline" />
+                <ParameterRefRef RefId="%AID%_P-%T%000000_R-%T%00000001" IndentLevel="1" HelpContext="%DOC%" />
+                <ParameterSeparator Id="%AID%_PS-nnn" Text="Editieroptionen" UIHint="Headline" />
+                <ParameterRefRef RefId="%AID%_P-%T%000001_R-%T%00000101" IndentLevel="1" HelpContext="%DOC%" />
+                <ParameterSeparator Id="%AID%_PS-nnn" Text=" " />
+                <ParameterBlock Id="%AID%_PB-nnn" Name="OpenKNX" Inline="true" Layout="Grid">
+                  <Rows>
+                    <Row Id="%AID%_PB-nnn_R-1" Name="Row1" />
+                    <Row Id="%AID%_PB-nnn_R-2" Name="Row2" />
+                  </Rows>
+                  <Columns>
+                    <Column Id="%AID%_PB-nnn_C-1" Name="Col1" Width="100%" />
+                  </Columns>
+                  <ParameterRefRef RefId="%AID%_P-%TT%00003_R-%TT%0000301" Cell="1,1" HelpContext="DUMMY-OpenKNX"/>
+                </ParameterBlock>
+              </ParameterBlock>
+              <choose ParamRefId="%AID%_P-%T%000001_R-%T%00000101">
+                <when test="0 1">
+                  <ParameterBlock Id="%AID%_PB-nnn" Text="Übersicht" Icon="table-large" HelpContext="DUMMY-Uebersicht">
+                    <ParameterBlock Id="%AID%_PB-nnn" Text="KO" Layout="Table" Inline="true">
+                      <Rows>
+                        <op:include href="Dummy.rows.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/Rows/*" prefix="DUMMY" type="template" IsInner="true" />                
+                      </Rows>
+                      <Columns>
+                        <Column Id="%AID%_PB-nnn_C-1" Width="60%" Text="Name" />
+                        <Column Id="%AID%_PB-nnn_C-2" Width="25%" Text="Ein-/Ausgang" />
+                        <Column Id="%AID%_PB-nnn_C-3" Width="15%" Text="Länge" />
+                      </Columns>                      
+                      <op:include href="Dummy.table.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/*" prefix="DUMMY" type="template" IsInner="true" />                
+                    </ParameterBlock>
+                  </ParameterBlock>
+                </when>
+              </choose>
+              <op:include href="Dummy.templ.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/*" prefix="DUMMY" type="template" IsInner="true" />                
+            </ChannelIndependentBlock>
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+      <Baggages>
+        <Baggage TargetPath="" Name="ets.png" Id="%FILE-ets%">
+          <FileInfo TimeInfo="%DATETIME%" />
+        </Baggage>
+      <Baggage TargetPath="" Name="Help_de.zip" Id="%FILE-HELP-de%">
+          <FileInfo TimeInfo="%DATETIME%" />
+        </Baggage>
+        <Baggage TargetPath="" Name="Icons.zip" Id="%FILE-ICONS%">
+          <FileInfo TimeInfo="%DATETIME%" />
+        </Baggage>
+      </Baggages>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>

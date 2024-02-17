@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../../Organization/knxprod-support/knx_project_20/knx-editor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<KNX xmlns:op="http://github.com/OpenKNX/OpenKNXproducer" xmlns="http://knx.org/xml/project/20" CreatedBy="KNX MT" ToolVersion="5.1.255.16695">
+  <ManufacturerData>
+    <Manufacturer RefId="M-00FA">
+      <ApplicationPrograms>
+        <ApplicationProgram Id="%AID%" ApplicationNumber="200" ApplicationVersion="1" ProgramType="ApplicationProgram" MaskVersion="MV-07B0" Name="SOM" LoadProcedureStyle="MergedProcedure" PeiType="0" DefaultLanguage="de" DynamicTableManagement="false" Linkable="false" MinEtsVersion="4.0">
+          <Static>
+            <Parameters>
+              <Parameter Id="%AID%_P-%T%%CCC%000" Name="KO%C%Name" ParameterType="%AID%_PT-Text40Byte" Text="Name des KO" Value="KO %C%" />
+              <Parameter Id="%AID%_P-%T%%CCC%001" Name="KO%C%Type" ParameterType="%AID%_PT-ComObjectType" Text="Länge des KO" Value="0" />
+              <Parameter Id="%AID%_P-%T%%CCC%003" Name="KO%C%InputType" ParameterType="%AID%_PT-InputType" Text="Ein-/Ausgang" Value="0" />
+            </Parameters>
+            <ParameterRefs>
+              <ParameterRef Id="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" RefId="%AID%_P-%T%%CCC%000" />
+              <ParameterRef Id="%AID%_P-%T%%CCC%001_R-%T%%CCC%00101" RefId="%AID%_P-%T%%CCC%001" />
+              <ParameterRef Id="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301" RefId="%AID%_P-%T%%CCC%003" />
+            </ParameterRefs>
+            <ComObjectTable>
+              <ComObject Id="%AID%_O-%T%%CCC%001" Name="KO%C%" Text="{{0:Objekt}}" Number="%K0%" FunctionText="Unbestimmt" ObjectSize="14 Bytes" ReadFlag="Disabled" WriteFlag="Disabled" CommunicationFlag="Disabled" TransmitFlag="Disabled" UpdateFlag="Disabled" ReadOnInitFlag="Disabled" Priority="Low" />
+            </ComObjectTable>
+            <ComObjectRefs>
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00101" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00102" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00103" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00104" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00105" RefId="%AID%_O-%T%%CCC%001" ObjectSize="5 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00106" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00107" RefId="%AID%_O-%T%%CCC%001" ObjectSize="7 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00108" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Byte" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00109" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00110" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00111" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00112" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00113" RefId="%AID%_O-%T%%CCC%001" ObjectSize="8 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00114" RefId="%AID%_O-%T%%CCC%001" ObjectSize="10 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00115" RefId="%AID%_O-%T%%CCC%001" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" />
+
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00121" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00122" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00123" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00124" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00125" RefId="%AID%_O-%T%%CCC%001" ObjectSize="5 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00126" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00127" RefId="%AID%_O-%T%%CCC%001" ObjectSize="7 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00128" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Byte" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"   FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00129" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00130" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00131" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00132" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00133" RefId="%AID%_O-%T%%CCC%001" ObjectSize="8 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00134" RefId="%AID%_O-%T%%CCC%001" ObjectSize="10 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00135" RefId="%AID%_O-%T%%CCC%001" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"                       FunctionText="Ausgang" ReadFlag="Enabled" WriteFlag="Disabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Disabled" />
+
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00141" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00142" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00143" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00144" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00145" RefId="%AID%_O-%T%%CCC%001" ObjectSize="5 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00146" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00147" RefId="%AID%_O-%T%%CCC%001" ObjectSize="7 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00148" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Byte" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"   FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00149" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00150" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00151" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00152" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00153" RefId="%AID%_O-%T%%CCC%001" ObjectSize="8 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00154" RefId="%AID%_O-%T%%CCC%001" ObjectSize="10 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00155" RefId="%AID%_O-%T%%CCC%001" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"                       FunctionText="Eingang" ReadFlag="Disabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Disabled" UpdateFlag="Enabled" />
+
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00161" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00162" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00163" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00164" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00165" RefId="%AID%_O-%T%%CCC%001" ObjectSize="5 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00166" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00167" RefId="%AID%_O-%T%%CCC%001" ObjectSize="7 Bit" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"    FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00168" RefId="%AID%_O-%T%%CCC%001" ObjectSize="1 Byte" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"   FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00169" RefId="%AID%_O-%T%%CCC%001" ObjectSize="2 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00170" RefId="%AID%_O-%T%%CCC%001" ObjectSize="3 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00171" RefId="%AID%_O-%T%%CCC%001" ObjectSize="4 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00172" RefId="%AID%_O-%T%%CCC%001" ObjectSize="6 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00173" RefId="%AID%_O-%T%%CCC%001" ObjectSize="8 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"  FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00174" RefId="%AID%_O-%T%%CCC%001" ObjectSize="10 Bytes" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+              <ComObjectRef Id="%AID%_O-%T%%CCC%001_R-%T%%CCC%00175" RefId="%AID%_O-%T%%CCC%001" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001"                       FunctionText="Ein-/Ausgang" ReadFlag="Enabled" WriteFlag="Enabled" CommunicationFlag="Enabled" TransmitFlag="Enabled" UpdateFlag="Enabled" />
+            </ComObjectRefs>
+          </Static>
+          <Dynamic>
+            <ChannelIndependentBlock> 
+              <choose ParamRefId="%AID%_P-%T%000000_R-%T%00000001">
+                <when test=">=%C%">
+                  <choose ParamRefId="%AID%_P-%T%000001_R-%T%00000101">
+                    <when test="0 2">
+                      <ParameterBlock Id="%AID%_PB-nnn" Text="{{0: ...}}" TextParameterRefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" Icon="swap-horizontal-circle-outline" HelpContext="Empty" >
+                        <ParameterSeparator Id="%AID%_PS-nnn" Text="Definition KO%C%" UIHint="Headline" />
+                        <ParameterRefRef RefId="%AID%_P-%T%%CCC%000_R-%T%%CCC%00001" IndentLevel="1" HelpContext="%DOC%" />
+                        <ParameterRefRef RefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301" IndentLevel="1" HelpContext="%DOC%" />
+                        <ParameterRefRef RefId="%AID%_P-%T%%CCC%001_R-%T%%CCC%00101" IndentLevel="1" HelpContext="%DOC%" />
+                      </ParameterBlock>
+                    </when>
+                  </choose>
+                  <choose ParamRefId="%AID%_P-%T%%CCC%001_R-%T%%CCC%00101">
+                    <when test="0">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00101" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00141" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00121" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00161" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="1">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00102" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00142" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00122" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00162" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="2">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00103" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00143" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00123" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00163" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="3">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00104" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00144" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00124" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00164" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="4">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00105" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00145" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00125" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00165" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="5">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00106" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00146" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00126" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00166" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="6">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00107" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00147" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00127" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00167" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="7">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00108" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00148" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00128" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00168" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="8">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00109" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00149" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00129" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00169" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="9">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00110" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00150" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00130" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00170" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="10">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00111" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00151" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00131" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00171" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="11">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00112" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00152" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00132" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00172" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="12">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00113" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00153" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00133" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00173" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="13">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00114" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00154" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00134" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00174" />
+                        </when>
+                      </choose>
+                    </when>
+                    <when test="14">
+                      <choose ParamRefId="%AID%_P-%T%%CCC%003_R-%T%%CCC%00301">
+                        <when test="0">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00115" />
+                        </when>
+                        <when test="1">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00155" />
+                        </when>
+                        <when test="2">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00135" />
+                        </when>
+                        <when test="3">
+                          <ComObjectRefRef RefId="%AID%_O-%T%%CCC%001_R-%T%%CCC%00175" />
+                        </when>
+                      </choose>
+                    </when>
+                  </choose>
+                </when>
+              </choose>
+            </ChannelIndependentBlock>
+          </Dynamic>
+        </ApplicationProgram>
+      </ApplicationPrograms>
+    </Manufacturer>
+  </ManufacturerData>
+</KNX>
