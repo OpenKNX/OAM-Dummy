@@ -88,7 +88,7 @@ Besonders für die Auswahl von Länge und vom Ein-/Ausgang ist dieser Modus wese
 ## Übersicht
 
 <!-- DOC Skip="1" -->
-Diese Seite erscheint nur, wenn man bei  [Editierbare Übersicht nutzen](#editierbare-übersicht-nutzen) ein Ja gewählt hat.
+Diese Seiten erscheinen nur, wenn man bei [Editiermodus](#editiermodus) den Wert "Übersicht und Detail" oder "Nur Übersicht" gewählt hat.
 
 Es erscheint eine Tabelle aller Kommunikationsobjekte und deren Eigenschaften, pro Zeile ein Kommunikationsobjekt.
 
@@ -99,7 +99,7 @@ Diese Darstellung ist übersichtlich, erlaubt aber nur Änderungen einzelner Tab
 ## **KO *n***
 
 <!-- DOC Skip="1" -->
-Diese Seiten erscheinen nur, wenn man bei  [Editierbare Detailsicht (für Multiselect) nutzen](#editierbare-detailsicht-für-multiselect-nutzen) ein Ja gewählt hat.
+Diese Seiten erscheinen nur, wenn man bei [Editiermodus](#editiermodus) den Wert "Übersicht und Detail" oder "Nur Detail" gewählt hat.
 
 Es erscheint für jedes Kommunikationsobjekt eine Seite mit allen Eigenschaften dieses Kommunikationsobjekts. 
 
