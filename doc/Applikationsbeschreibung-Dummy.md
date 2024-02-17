@@ -6,7 +6,7 @@ xx.xx.2024 Applikation 1.0
 
 ## **Einleitung**
 
-Der OpenKNX Virtual Dummy ist eine Applikation ohne Firmware und ohne jegliche Hardwareabhängigkeit. Ihr Zweck ist es, Geräte in der ETS abbilden zu können, die keine eigene ETS-Applikation besitzen, weil sie z.B. über ein Gateway Telegramme auf den KNX-Bus schicken. Der nutzen einer solchen Applikation (im Allgemeinen Dummy genannt) zeigt sich an verschiedenen Stellen:
+OpenKNX Dummy ist eine Applikation ohne Firmware und ohne jegliche Hardwareabhängigkeit. Ihr Zweck ist es, Geräte in der ETS abbilden zu können, die keine eigene ETS-Applikation besitzen, weil sie z.B. über ein Gateway Telegramme auf den KNX-Bus schicken. Der nutzen einer solchen Applikation (im Allgemeinen Dummy genannt) zeigt sich an verschiedenen Stellen:
 
 * Man kann in der ETS, die das KNX-Projektverwaltungswerkzeug ist, direkt sehen, welche "echten" KNX-Geräte durch Gruppenadressen mit diesem virtuellen Gerät verbunden sind.
 * Man kann im Gruppenmonitor das virtuelle Gerät direkt als benannte Quelle sehen, falls man die physikalische Adresse des virtuellen Gerätes genau so wählt wie die PA, die für dieses Gerät im Gateway genutzt wird.
@@ -36,13 +36,19 @@ Die Applikation bietet bis zu 999 Kommunikationsobjekte, die man einzeln folgend
 * Angabe, ob das Kommunikationsobjekt ein Eingang, Ausgang oder beides ist 
 * Es ist möglich, die Flags auch einzeln zu setzen, um ein möglichst gutes Abbild des echten Gerätes in der ETS zu bekommen.
 
-Für diesen Virtual Dummy werden 2 Sichten zum Editieren der Objekte angeboten:
+Für diesen OpenKNX Dummy werden 2 Sichten zum Editieren der Objekte angeboten:
 
 * Eine tabellarische Sicht mit allen Eigenschaften eines Kommunikationsobjekts pro Zeile und allen KO auf einer Seite. 
 * Eine Detailsicht mit einem Kommunikationsobjekt pro Seite auf entsprechend vielen Seiten. Hier können die Multiselect-Eigenschaften der ETS besonders gut genutzt werden, um viele Objekte auf einmal ändern zu können.
 
+Ferner kann der OpenKNX Dummy 
 
-## **Dummy**
+* sowohl auf einer TP-Linie
+* wie auf einer IP-Linie
+
+verwendet werden.
+
+## **Dummy Application**
 
 Auf dieser Seite erfolgen die grundsätzlichen Einstellungen für die Applikation. 
 
