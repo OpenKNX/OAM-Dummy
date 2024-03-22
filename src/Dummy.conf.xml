@@ -2,8 +2,10 @@
 <?xml-model href="../../Organization/knxprod-support/knx_project_20/knx-editor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <KNX xmlns:op="http://github.com/OpenKNX/OpenKNXproducer" xmlns="http://knx.org/xml/project/20" >
 
-  <op:config name="%DUMMY_ApplicationVersion%" value="0.12" />
-  <op:config name="%DUMMY_ReplacesVersions%" value="0.11" />
-
+  <op:config name="%DUMMY_ApplicationVersion%" value="0.13" />
+  <op:config name="%DUMMY_ReplacesVersions%" value="0" />
+  
+  <op:nowarn id="1" regex="%MID%" />
+  
 </KNX>
 <!-- this is an example for a config file, in productive use -->

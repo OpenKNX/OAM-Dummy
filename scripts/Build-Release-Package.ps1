@@ -23,7 +23,7 @@ scripts/Build-Release.ps1 Big
 if (!$?) { exit 1 }
 Copy-Item release/* release-package
 
-scripts/Build-Release.ps1 Release
+scripts/Build-Release.ps1 Small
 if (!$?) { exit 1 }
 Copy-Item release/* release-package
 

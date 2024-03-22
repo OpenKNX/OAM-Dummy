@@ -32,11 +32,11 @@
             "group": "test"
         },
         {
-            "label": "Build-Release",
+            "label": "Build-Small",
             "type": "shell",
             "command": "scripts/Build-Release.ps1",
             "args": [
-                "Release"
+                "Small"
             ],
             "problemMatcher": [],
             "group": "test"

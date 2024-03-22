@@ -11,3 +11,4 @@ src/*.baggages
 compile_commands.json
 include/versions.h
 release-package/*
+release-collection/*

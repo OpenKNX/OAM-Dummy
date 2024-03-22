@@ -10,6 +10,8 @@
           ReplacesVersions="%DUMMY_ReplacesVersions%" 
           ApplicationRevision="0" 
           ProductName="Dummy"
+          BuildSuffix="-Big"
+          BuildSuffixText=" (groß)"
           MediumTypes="MT-0 MT-5"
           BusCurrent="0"
           IsRailMounted="false"
