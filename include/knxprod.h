@@ -10,7 +10,7 @@
                                              
 #define MAIN_OpenKnxId 0xA0
 #define MAIN_ApplicationNumber 5
-#define MAIN_ApplicationVersion 13
+#define MAIN_ApplicationVersion 15
 #define MAIN_ParameterSize 0
 #define MAIN_MaxKoNumber 99
 #define MAIN_OrderNumber "0xA005"

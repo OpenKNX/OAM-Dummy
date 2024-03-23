@@ -94,17 +94,23 @@
               <choose ParamRefId="%AID%_P-%T%000001_R-%T%00000101">
                 <when test="0 1">
                   <ParameterBlock Id="%AID%_PB-nnn" Text="Übersicht" Icon="table-large" HelpContext="DUMMY-Uebersicht">
-                    <ParameterBlock Id="%AID%_PB-nnn" Text="KO" Layout="Table" Inline="true">
+                    <!-- <op:include href="Dummy.rows.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/Rows/*" prefix="DUMMY" type="template" IsInner="true" />                 -->
+                    <ParameterBlock Id="%AID%_PB-nnn" Text="KO" Layout="Grid" Inline="true">
                       <Rows>
-                        <op:include href="Dummy.rows.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/Rows/*" prefix="DUMMY" type="template" IsInner="true" />                
+                        <Row Id="%AID%_PB-nnn_R-1" />
                       </Rows>
                       <Columns>
-                        <Column Id="%AID%_PB-nnn_C-1" Width="60%" Text="Name" />
-                        <Column Id="%AID%_PB-nnn_C-2" Width="25%" Text="Ein-/Ausgang" />
-                        <Column Id="%AID%_PB-nnn_C-3" Width="15%" Text="Länge" />
-                      </Columns>                      
-                      <op:include href="Dummy.table.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/*" prefix="DUMMY" type="template" IsInner="true" />                
+                        <Column Id="%AID%_PB-nnn_C-1" Width="8%" />
+                        <Column Id="%AID%_PB-nnn_C-2" Width="52%" />
+                        <Column Id="%AID%_PB-nnn_C-3" Width="25%" />
+                        <Column Id="%AID%_PB-nnn_C-4" Width="15%" />
+                      </Columns>
+                      <ParameterSeparator Id="%AID%_PS-nnn" Text="KO" UIHint="Headline" Cell="1,1" />
+                      <ParameterSeparator Id="%AID%_PS-nnn" Text="Name" UIHint="Headline" Cell="1,2" />
+                      <ParameterSeparator Id="%AID%_PS-nnn" Text="Ein-/Ausgang" UIHint="Headline" Cell="1,3" />
+                      <ParameterSeparator Id="%AID%_PS-nnn" Text="Länge" UIHint="Headline" Cell="1,4" />
                     </ParameterBlock>
+                    <op:include href="Dummy.table.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/*" prefix="DUMMY" type="template" IsInner="true" />
                   </ParameterBlock>
                 </when>
               </choose>
