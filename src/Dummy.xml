@@ -5,8 +5,8 @@
 
   <op:ETS OpenKnxId="0xA0"
     ApplicationNumber="0x04"
-    ApplicationVersion="3.4"
-    ReplacesVersions="3.3 3.2 3.1"
+    ApplicationVersion="3.5"
+    ReplacesVersions="3.4 3.3 3.2 3.1"
     ApplicationRevision="0"
     ProductName="Dummy"
     MediumTypes="MT-0 MT-5"

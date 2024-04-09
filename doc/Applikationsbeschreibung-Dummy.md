@@ -1,6 +1,6 @@
 ## **Änderungshistorie**
 
-xx.xx.2024 Applikation 1.0
+09.04.2024 Applikation 1.0
 
 * Initiales Release
 
@@ -35,6 +35,7 @@ Die Applikation bietet bis zu 999 Kommunikationsobjekte, die man einzeln folgend
 
 * Angabe, ob das Kommunikationsobjekt ein Eingang, Ausgang oder beides ist 
 * Es ist möglich, die Flags auch einzeln zu setzen, um ein möglichst gutes Abbild des echten Gerätes in der ETS zu bekommen.
+* Des weiteren ist es in der ETS möglich, jedem KO einen passenden DPT zuzuweisen, um die Semantik des Wertes zu dokumentieren.
 
 Für diesen OpenKNX Dummy werden 2 Sichten zum Editieren der Objekte angeboten:
 
