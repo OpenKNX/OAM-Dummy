@@ -58,7 +58,7 @@
               </ParameterType>
             </ParameterTypes>
             <Parameters>
-              <Parameter Id="%AID%_P-%T%000000" Name="NumChannels" ParameterType="%AID%_PT-NumChannels" Text="Anzahl der Kommunikationsobjekte" Value="20" SuffixText="von %N%" />
+              <Parameter Id="%AID%_P-%T%000000" Name="NumChannels" ParameterType="%AID%_PT-NumChannels" Text="Anzahl der Kommunikationsobjekte" Value="5" SuffixText="von %N%" />
               <Parameter Id="%AID%_P-%T%000001" Name="EditMode" ParameterType="%AID%_PT-EditMode" Text="Editiermodus" Value="0" />
               <Parameter Id="%AID%_P-%T%000003" Name="ETS" ParameterType="%AID%_PT-ETS" Text="ETS" Access="Read" Value="" />
             </Parameters>
@@ -88,20 +88,20 @@
                   <Columns>
                     <Column Id="%AID%_PB-nnn_C-1" Name="Col1" Width="100%" />
                   </Columns>
-                  <ParameterRefRef RefId="%AID%_P-%TT%00003_R-%TT%0000301" Cell="1,1" HelpContext="DUMMY-OpenKNX"/>
+                  <ParameterRefRef RefId="%AID%_P-%TT%00003_R-%TT%0000301" Cell="1,1" HelpContext="DUMMY-OpenKNX" />
                 </ParameterBlock>
               </ParameterBlock>
               <choose ParamRefId="%AID%_P-%T%000001_R-%T%00000101">
                 <when test="0 1">
                   <ParameterBlock Id="%AID%_PB-nnn" Text="Übersicht" Icon="table-large" HelpContext="DUMMY-Uebersicht">
                     <!-- <op:include href="Dummy.rows.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/ParameterBlock/Rows/*" prefix="DUMMY" type="template" IsInner="true" />                 -->
-                    <ParameterBlock Id="%AID%_PB-nnn" Text="KO" Layout="Grid" Inline="true">
+                    <ParameterBlock Id="%AID%_PB-nnn" Layout="Grid" Inline="true">
                       <Rows>
                         <Row Id="%AID%_PB-nnn_R-1" />
                       </Rows>
                       <Columns>
-                        <Column Id="%AID%_PB-nnn_C-1" Width="8%" />
-                        <Column Id="%AID%_PB-nnn_C-2" Width="52%" />
+                        <Column Id="%AID%_PB-nnn_C-1" Width="7%" />
+                        <Column Id="%AID%_PB-nnn_C-2" Width="53%" />
                         <Column Id="%AID%_PB-nnn_C-3" Width="25%" />
                         <Column Id="%AID%_PB-nnn_C-4" Width="15%" />
                       </Columns>
@@ -114,7 +114,15 @@
                   </ParameterBlock>
                 </when>
               </choose>
-              <op:include href="Dummy.templ.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/*" prefix="DUMMY" type="template" IsInner="true" />                
+              <op:include href="Dummy.templ.xml" xpath="//ApplicationProgram/Dynamic/ChannelIndependentBlock/*" prefix="DUMMY" type="template" IsInner="true" />
+              <choose ParamRefId="%AID%_P-%T%000000_R-%T%00000001">
+                <when test="&lt;%N%">
+                  <ParameterBlock Id="%AID%_PB-nnn" Name="AdditionalChannels" Text="(mehr)" Icon="dots-horizontal" HelpContext="Empty">
+                    <ParameterSeparator Id="%AID%_PS-nnn" Text="Kanalauswahl" UIHint="Headline" />
+                    <ParameterRefRef RefId="%AID%_P-%T%000000_R-%T%00000001" IndentLevel="1" HelpContext="%DOC%" />
+                  </ParameterBlock>
+                </when>
+              </choose>
             </ChannelIndependentBlock>
           </Dynamic>
         </ApplicationProgram>
